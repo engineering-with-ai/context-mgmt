@@ -1,6 +1,6 @@
 # Engineering With AI Context Management 📃
 ![](https://img.shields.io/gitlab/pipeline-status/engineering-with-ai/context-mgmt?branch=main&logo=gitlab)
-![](https://img.shields.io/badge/claude_code_1.0.69-gray?logo=claude)
+![](https://img.shields.io/badge/claude_code_2.1.74-gray?logo=claude)
 >A collection of context documentation for the ai with engineering project
 
 
