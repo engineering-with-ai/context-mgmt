@@ -10,6 +10,7 @@ components/
     ├── ComponentName.types.tsx        # Separate for api use and avoid cycles
     ├── ComponentName.container.tsx    # Container component (data fetching/logic)
     ├── ComponentName.styles.ts        # StyleSheet definitions
+    ├── ComponentName.hooks.ts         # hooks
     └── ComponentName.test.tsx         # Colocated tests
 ```
 

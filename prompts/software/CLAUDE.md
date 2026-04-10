@@ -119,7 +119,7 @@ When engaging in TDD:
 
 
 ## Documentation
-
+ - **Write comments in a terse and casual tone**
 - **Comment non-obvious code.** Everything should be understandable to a mid-level developer.
 - **Add an inline `# Reason:` comment** for complex logic — explain the why, not the what.
 - **Write concise docstrings primarily for an LLM to consume**, secondarily for a document generator.
@@ -130,3 +130,4 @@ When engaging in TDD:
 - **Never assume missing context. Ask.**
 - **Never hallucinate API or library functions.** Only use known, verified libraries.
 - **Never chain steps through a decision gate.** Stop. Present options. Wait.
+- **Never declare an API broken without research and confirmation.** If something doesn't work as expected, the first assumption is that you're using it wrong. Before concluding "bug": (1) search docs, forums, and GitHub issues, (2) read the library source, (3) write an isolated probe that eliminates your own usage errors. Only after all three confirm the behavior, label it a bug.

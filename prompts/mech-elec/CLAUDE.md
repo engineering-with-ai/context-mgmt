@@ -136,11 +136,23 @@ Never trust simulation output. Validate it.
 - **Use proper logging, not print() debugging**
 - **Write concise Google Style Docstrings for an LLM to consume**
 
+## Documentation
+ - **Write comments in a terse and casual tone**
+- **Comment non-obvious code.** Everything should be understandable to a mid-level d
+eveloper.
+- **Add an inline `# Reason:` comment** for complex logic — explain the why, not the what.
+
+
+## AI Behavior Rules
+
+- **Never declare an API broken without research and confirmation.** If something doesn't work as expected, the first assumption is that you're using it wrong. Before concluding "bug": (1) search docs, forums, and GitHub issues, (2) read the library source, (3) write an isolated probe that eliminates your own usage errors. Only after all three confirm the behavior, label it a bug.
+
 
 ## Anti-Bias Rules
 
 | AI Bias | Correct Practice |
 |---|---|
+| Declares an API broken after one failed attempt | Research docs + forums + issues first. Write an isolated test. Your usage is wrong until proven otherwise |
 | Uses ideal/textbook models by default | Real systems have parasitics, losses, tolerances — state which you're neglecting and why |
 | Writes tutorial-style notebooks with markdown explanations between every cell | Notebook is a calculation document — derivation, numbers, expected value. Not a teaching tool |
 | Presents single-point results as definitive | Every result has a tolerance band. If you can't state the band, you don't understand the result |
